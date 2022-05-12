@@ -11,9 +11,14 @@ export class AppComponent {
 
   onCardClick() {
     this.showModal = true;
+
   }
 
   closeModal() {
     this.showModal = false;
+  }
+
+  enterText(event: KeyboardEvent) {
+    console.log(event.key);
   }
 }
